@@ -19,7 +19,12 @@ const Contact = () => {
             process.env.REACT_APP_USER_ID
         )
             .then((response) => {
-                console.log("Success", response.status, response.text)
+                console.log("Success", response.status, response.text);
+                setToSend({
+                    from_name: "",
+                    from_email: "",
+                    message: ""
+                })
             })
             .catch((err) => {
                 console.log(err);

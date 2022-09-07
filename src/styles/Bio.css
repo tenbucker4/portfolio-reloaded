@@ -1,19 +1,20 @@
-.bio-container {
+.about-me {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 4rem;
 }
 
-.bio-container h1 {
+.about-me h1 {
     text-transform: uppercase;
     letter-spacing: 0.25ch;
     font-size: 38px;
     padding: 1rem 0;
 }
 
-.bio-container span {
+.about-me span {
     content: "";
     width: 100px;
     height: 0.5rem;

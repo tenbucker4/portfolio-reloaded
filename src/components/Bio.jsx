@@ -5,7 +5,7 @@ import { mdiLanguageHtml5, mdiLanguageCss3, mdiLanguageJavascript, mdiReact, mdi
 
 const Bio = ({ darkMode }) => {
   return (
-    <section style={{ backgroundColor: darkMode? "black" : "white", color: darkMode? "white" : "black" }} className="bio-container">
+    <section style={{ backgroundColor: darkMode? "black" : "white", color: darkMode? "white" : "black" }} className="about-me">
         <h1>About Me</h1>
         <span></span>
         <p className="bio-caption">Me and my skillset.</p>
