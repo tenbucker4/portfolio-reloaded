@@ -9,6 +9,8 @@ const Contact = ({ contactRef, darkMode }) => {
         message: ""
     })
 
+    const [messageSent, setMessageSent] = useState(false);
+
     const onSubmit = (e) => {
         e.preventDefault();
 
@@ -24,7 +26,13 @@ const Contact = ({ contactRef, darkMode }) => {
                     from_name: "",
                     from_email: "",
                     message: ""
-                })
+                });
+                setTimeout(() => {
+                    setMessageSent(true)
+                  }, 1000)
+                  setTimeout(() => {
+                    setMessageSent(false)
+                  }, 6000)
             })
             .catch((err) => {
                 console.log(err);
@@ -55,6 +63,7 @@ const Contact = ({ contactRef, darkMode }) => {
                     <textarea name="message" placeholder="Your Message" value={toSend.message} onChange={handleChange} rows={8}/>
                 </div>
                 <button className="send-message" type="submit">Send</button>
+                {messageSent? (<div>Thanks! I'll get back to you shortly.</div>) : null}
             </form>
         </div>
     </section>

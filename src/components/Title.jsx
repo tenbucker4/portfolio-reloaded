@@ -16,14 +16,14 @@ const Title = ({ darkMode, projectRef, titleRef }) => {
         <div>I'm a frontend software developer.</div>
         <button onClick={scroll} className="see-projects">Projects</button>
         <aside style={{ backgroundColor: "transparent", color: darkMode? "white" : "black" }} className="side-links">
-            <a href="https://github.com/tenbucker4" target="_blank" rel='noreferrer'>
+            <a href="https://www.linkedin.com/in/ben-tucker-6a520911a/" target="_blank" rel='noreferrer'>
                 <Icon path={mdiLinkedin}
                 className="link-icon"
                 title="LinkedIn Profile"
                 color={darkMode ? ("white") : ("black")}
                 />
             </a>
-            <a href="https://www.linkedin.com/in/ben-tucker-6a520911a/" target="_blank" rel='noreferrer'>
+            <a href="https://github.com/tenbucker4" target="_blank" rel='noreferrer'>
                 <Icon path={mdiGithub}
                 className="link-icon"
                 title="GitHub Profile"
