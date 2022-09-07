@@ -1,0 +1,28 @@
+header {
+    padding: 0 3rem;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    background-color: white;
+}
+
+header ul {
+    display: flex;
+    gap: 2rem;
+}
+
+header ul li {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+header ul li:hover {
+    color: var(--pinky-red);
+}
+
+header ul li,
+.header-title {
+    text-transform: uppercase;
+}
