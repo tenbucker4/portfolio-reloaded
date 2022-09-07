@@ -10,10 +10,7 @@ footer {
 .footer-links {
     display: flex;
     justify-content: center;
-}
-
-.opyright {
-    text-align: justify;
+    gap: 0.5rem;
 }
 
 .footer-icon {
@@ -24,5 +21,4 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
 }

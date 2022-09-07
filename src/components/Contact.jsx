@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import "../styles/Contact.css"
 import { send } from '@emailjs/browser'
 
-const Contact = ({ contactRef }) => {
+const Contact = ({ contactRef, darkMode }) => {
     const [toSend, setToSend] = useState({
         from_name: "",
         from_email: "",
@@ -36,11 +36,11 @@ const Contact = ({ contactRef }) => {
     }
 
   return (
-    <section ref={contactRef} className="contact">
+    <section style={{ backgroundColor: darkMode? "black" : "white", color: darkMode? "white" : "black" }} ref={contactRef} className="contact">
         <h1>Contact</h1>
         <span></span>
-        <p className="contact-caption">Have a question or interested in working together? Send me a message and I'll get back to you as soon as possible.</p>
-        <div className="form-container">
+        <p className="contact-caption">Have a question or interested in working together? Send me an email.</p>
+        <div style={{ backgroundColor: darkMode? "#1b1b1b" : "rgb(233, 233, 233)"}} className="form-container">
             <form onSubmit={onSubmit}>
                 <div className="form-section">
                     <label htmlFor="from_name">Name</label>
