@@ -5,12 +5,17 @@ import { mdiLinkedin } from '@mdi/js';
 import { mdiGithub } from '@mdi/js';
 import { mdiFileAccount } from '@mdi/js';
 
-const Title = ({ darkMode }) => {
+const Title = ({ darkMode, projectRef, titleRef }) => {
+    const scroll = () => {
+        projectRef.current?.scrollIntoView();
+    }
+
+
   return (
-    <section style={{ backgroundColor: darkMode? "rgb(27, 27, 27)" : "rgb(233, 233, 233)", color: darkMode? "white" : "black" }} className="title-page">
+    <section ref={titleRef} style={{ backgroundColor: darkMode? "rgb(27, 27, 27)" : "rgb(233, 233, 233)", color: darkMode? "white" : "black" }} className="title-page">
         <h1>Hi, I'm <span>Ben.</span></h1>
         <h3>I'm a frontend software developer.</h3>
-        <button className="see-projects">Projects</button>
+        <button onClick={scroll} className="see-projects">Projects</button>
         <aside className="side-links" style={{ backgroundColor: darkMode? "black" : "white" }}>
             <a href="https://github.com/tenbucker4" target="_blank" rel='noreferrer'>
                 <Icon path={mdiLinkedin}

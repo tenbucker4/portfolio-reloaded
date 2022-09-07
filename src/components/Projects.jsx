@@ -1,9 +1,9 @@
 import React from 'react'
 import "../styles/Projects.css"
 
-const Projects = () => {
+const Projects = ( { darkMode, projectRef }) => {
   return (
-    <section className="projects">
+    <section ref={projectRef} className="projects">
         <h1>Projects</h1>
         <span></span>
         <p className="bio-caption">Some of the projects I've built.</p>

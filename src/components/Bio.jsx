@@ -1,11 +1,10 @@
 import React from 'react'
 import "../styles/Bio.css"
-import Icon from '@mdi/react'
-import { mdiLanguageHtml5, mdiLanguageCss3, mdiLanguageJavascript, mdiReact, mdiMaterialUi, mdiGit } from '@mdi/js';
 
-const Bio = ({ darkMode }) => {
+
+const Bio = ({ darkMode, bioRef }) => {
   return (
-    <section style={{ backgroundColor: darkMode? "black" : "white", color: darkMode? "white" : "black" }} className="about-me">
+    <section ref={bioRef} style={{ backgroundColor: darkMode? "black" : "white", color: darkMode? "white" : "black" }} className="about-me">
         <h1>About Me</h1>
         <span></span>
         <p className="bio-caption">Me and my skillset.</p>

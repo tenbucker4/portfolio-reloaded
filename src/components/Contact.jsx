@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import "../styles/Contact.css"
 import { send } from '@emailjs/browser'
 
-const Contact = () => {
+const Contact = ({ contactRef }) => {
     const [toSend, setToSend] = useState({
         from_name: "",
         from_email: "",
@@ -36,7 +36,7 @@ const Contact = () => {
     }
 
   return (
-    <section className="contact">
+    <section ref={contactRef} className="contact">
         <h1>Contact</h1>
         <span></span>
         <p className="contact-caption">Have a question or interested in working together? Send me a message and I'll get back to you as soon as possible.</p>
@@ -52,7 +52,7 @@ const Contact = () => {
                 </div>
                 <div className="form-section">
                     <label htmlFor="message">Message</label>
-                    <textarea name="message" placeholder="Your Message" value={toSend.message} onChange={handleChange} rows={10}/>
+                    <textarea name="message" placeholder="Your Message" value={toSend.message} onChange={handleChange} rows={8}/>
                 </div>
                 <button className="send-message" type="submit">Send</button>
             </form>
