@@ -5,17 +5,22 @@ header {
     justify-content: space-between;
     align-items: center;
     font-weight: bold;
-    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+    box-shadow: 0 10px 100px rgb(0 0 0 / 10%);
 }
 
 header ul {
     display: flex;
     gap: 2rem;
+    margin-left: auto;
+    padding-right: 2rem;
 }
 
 header ul li {
     cursor: pointer;
-    transition: color 0.3s;
 }
 
 header ul li:hover {
@@ -25,4 +30,15 @@ header ul li:hover {
 header ul li,
 .header-title {
     text-transform: uppercase;
+}
+
+.dark-mode-icon {
+    cursor: pointer;
+    width: 1.5rem;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+}
+
+.dark-mode-icon:hover {
+    transform: rotate(180deg);
 }

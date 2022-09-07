@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     font-family: "Source Sans Pro", sans-serif;
+    transition: color 0.15s;
 }
 
 html {
@@ -17,6 +18,10 @@ ul {
 
 a {
     color: inherit;
+}
+
+p {
+    font-size: 18px;
 }
 
 button {
