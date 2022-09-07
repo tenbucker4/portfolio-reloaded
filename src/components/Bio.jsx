@@ -8,7 +8,7 @@ const Bio = ({ darkMode }) => {
     <section style={{ backgroundColor: darkMode? "black" : "white", color: darkMode? "white" : "black" }} className="bio-container">
         <h1>About Me</h1>
         <span></span>
-        <p className="bio-caption">Me and my skillset</p>
+        <p className="bio-caption">Me and my skillset.</p>
         <div className="bio-content">
             <div className="about-me-content">
                 <h3>A bit more about me</h3>

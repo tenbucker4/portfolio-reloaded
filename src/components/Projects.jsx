@@ -6,7 +6,7 @@ const Projects = () => {
     <section className="projects">
         <h1>Projects</h1>
         <span></span>
-        <p className="bio-caption">Some of the projects I've built</p>
+        <p className="bio-caption">Some of the projects I've built.</p>
         <div className="project-container">
           <div className="project-left">
             <img src={require(`../files/the-range.jpg`)}></img>

@@ -15,21 +15,21 @@ const Title = ({ darkMode }) => {
             <a href="https://github.com/tenbucker4" target="_blank" rel='noreferrer'>
                 <Icon path={mdiLinkedin}
                 className="link-icon"
-                title="User Profile"
+                title="LinkedIn Profile"
                 color={darkMode ? ("white") : ("black")}
                 />
             </a>
             <a href="https://www.linkedin.com/in/ben-tucker-6a520911a/" target="_blank" rel='noreferrer'>
                 <Icon path={mdiGithub}
                 className="link-icon"
-                title="User Profile"
+                title="GitHub Profile"
                 color={darkMode ? ("white") : ("black")}
                 />
             </a>
             <a href="../files/Ben-Tucker-Resume.pdf" target="_blank" rel='noreferrer' download>
                 <Icon path={mdiFileAccount}
                 className="link-icon"
-                title="User Profile"
+                title="Resume"
                 color={darkMode ? ("white") : ("black")}
                 />
             </a>
