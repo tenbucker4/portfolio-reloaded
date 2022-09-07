@@ -13,8 +13,7 @@ const Projects = ( { darkMode, projectRef }) => {
           </div>
           <div className="project-right">
             <h2>The Range</h2>
-            <p>The Range is a shopping cart application built in React. Users can browse
-               products by category or manual search, add them to their cart, and view/edit their cart.</p>
+            <p>The Range is a shopping cart application built in React.</p>
             <div className="project-buttons">
               <a href="https://tenbucker4.github.io/the-range/" target="_blank"><button className="live-site">Live Site</button></a>
               <a href="https://github.com/tenbucker4/the-range" target="_blank"><button className="see-code">See Code</button></a>

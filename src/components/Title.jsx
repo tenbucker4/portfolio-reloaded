@@ -16,7 +16,7 @@ const Title = ({ darkMode, projectRef, titleRef }) => {
         <h1>Hi, I'm <span>Ben.</span></h1>
         <h3>I'm a frontend software developer.</h3>
         <button onClick={scroll} className="see-projects">Projects</button>
-        <aside className="side-links" style={{ backgroundColor: darkMode? "black" : "white" }}>
+        <aside style={{ backgroundColor: "transparent", color: darkMode? "white" : "black" }} className="side-links">
             <a href="https://github.com/tenbucker4" target="_blank" rel='noreferrer'>
                 <Icon path={mdiLinkedin}
                 className="link-icon"

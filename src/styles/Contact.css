@@ -30,7 +30,7 @@
 }
 
 .form-container {
-    width: 80%;
+    width: 100%;
     max-width: 750px;
     background-color: rgb(233, 233, 233);
     padding: 2rem;
@@ -78,4 +78,10 @@ textarea {
     border: none;
     border-radius: 5px;
     text-transform: uppercase;
+}
+
+@media (max-width: 880px) {
+    .contact {
+        padding: 6rem 2rem 4rem 2rem;
+    }
 }

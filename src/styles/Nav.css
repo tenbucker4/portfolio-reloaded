@@ -1,4 +1,5 @@
 header {
+    position: relative;
     padding: 0 3rem;
     height: 75px;
     display: flex;
@@ -41,4 +42,28 @@ header ul li,
 
 .dark-mode-icon:hover {
     transform: rotate(180deg);
+}
+
+@media (max-width: 775px) {
+    .header-title {
+        display: none;
+    }
+
+    header {
+        justify-content: center;
+        padding: 0rem 2rem;
+    }
+
+    header ul {
+        gap: 1rem;
+        margin-left: 0;
+        padding-right: 0rem;
+        font-size: 14px;
+    }
+
+    .dark-mode-icon {
+        position: fixed;
+        top: 85px;
+        right: 10px;
+    }
 }

@@ -55,3 +55,20 @@
 .link-icon:hover {
     color: var(--pinky-red);
 }
+
+@media (max-width: 775px) {
+    .side-links {
+        position: static;
+        height: auto;
+        width: fit-content;
+        flex-direction: row;
+        background-color: rgb(233, 233, 233);
+    }
+
+    .side-links a {
+        width: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -62,6 +62,3 @@ const Contact = ({ contactRef }) => {
 }
 
 export default Contact
-
-// serviceID: service_evc856f
-// templateId: template_zvwvmpk
