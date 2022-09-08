@@ -9,6 +9,19 @@ const Projects = ( { darkMode, projectRef }) => {
         <p className="bio-caption">Some of the projects I've built.</p>
         <div className="project-container">
           <div className="project-left">
+            <img src={require(`../files/youclone.jpeg`)}></img>
+          </div>
+          <div className="project-right">
+            <h2>YouClone</h2>
+            <p>YouClone is a fully functional replica of YouTube built with React and Material UI.</p>
+            <div className="project-buttons">
+              <a href="https://tenbucker4.github.io/youclone/" target="_blank"><button className="live-site">Live Site</button></a>
+              <a href="https://github.com/tenbucker4/youclone" target="_blank"><button className="see-code">See Code</button></a>
+            </div>
+          </div>
+        </div>
+        <div className="project-container">
+          <div className="project-left">
             <img src={require(`../files/the-range.jpg`)}></img>
           </div>
           <div className="project-right">
