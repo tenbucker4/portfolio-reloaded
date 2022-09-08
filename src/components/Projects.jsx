@@ -59,16 +59,6 @@ const Projects = ( { darkMode, projectRef }) => {
             </div>
           </div>
         </div>
-        <div className="project-container">
-          <div className="project-left">
-            <img style={{ filter: "blur(2px)"}} src={require(`../files/trek.jpg`)}></img>
-          </div>
-          <div className="project-right">
-            <h2>Trek (Coming Soon)</h2>
-            <p>Trek is an upcoming full stack social media site built with MongoDB, Express, React and NodeJS.</p>
-            {/* <button>Live Site</button> */}
-          </div>
-        </div>
     </section>
   )
 }
