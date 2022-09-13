@@ -35,12 +35,13 @@
     display: flex;
     justify-content: center;
     gap: 4rem;
-    padding: 4rem;
+    padding: 4 0rem;
 }
 
 .about-me-content,
 .skills-content {
     width: 50%;
+    max-width: 475px;
 }
 
 .skills {
@@ -64,6 +65,7 @@
     .about-me-content,
     .skills-content {
         width: 100%;
+        max-width: none;
     }
 
     .about-me {

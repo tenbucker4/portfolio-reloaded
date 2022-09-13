@@ -12,7 +12,7 @@ const Bio = ({ darkMode, bioRef }) => {
             <div className="about-me-content">
                 <h3>A bit more about me</h3>
                 <br></br>
-                <p style={{ color: darkMode? "white" : "#555555" }}>I'm a <b>frontend software developer</b> with a passion for solving meaningful, complex problems.
+                <p style={{ color: darkMode? "white" : "#555555" }}>I'm a <b>frontend developer</b> with a passion for solving meaningful, complex problems and building products that are intuitive and visually-appealing.
                      Since discovering web development, I've become fascinated with the combination of logic,
                       creativity, and constant new technologies that promote a mentality of <b>lifelong learning</b>.
                        When I'm away from my computer, I love playing basketball, golf, video games, and spending time with family and friends.</p>
@@ -31,6 +31,8 @@ const Bio = ({ darkMode, bioRef }) => {
                     <div className="skill-entry">React</div>
                     <div className="skill-entry">Material UI</div>
                     <div className="skill-entry">Git</div>
+                    <div className="skill-entry">GitHub</div>
+                    <div className="skill-entry">Firebase</div>
                     <div className="skill-entry">Responsive Design</div>
                 </div>
             </div>

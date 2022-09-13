@@ -25,12 +25,20 @@
 
 .project-container {
     display: flex;
+    justify-content: center;
     padding: 2rem;
     gap: 4rem;
 }
 
+.tech-stack,
+.project-description {
+    font-size: 16px;
+}
+
 .project-left {
-    width: 55%;
+    width: 45%;
+    display: flex;
+    align-items: center;
 }
 
 .project-left img {
@@ -41,10 +49,11 @@
 
 .project-right {
     width: 45%;
+    max-width: 450px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .project-right button {
@@ -86,6 +95,7 @@
         align-items: center;
         gap: 1rem;
         text-align: center;
+        max-width: none;
     }
 
     .projects {

@@ -13,7 +13,7 @@ const Title = ({ darkMode, projectRef, titleRef }) => {
   return (
     <section ref={titleRef} style={{ backgroundColor: darkMode? "rgb(27, 27, 27)" : "rgb(233, 233, 233)", color: darkMode? "white" : "black" }} className="title-page">
         <h1>Hi, I'm <span>Ben.</span></h1>
-        <div>I'm a frontend software developer.</div>
+        <div>I'm a frontend developer.</div>
         <button onClick={scroll} className="see-projects">Projects</button>
         <aside style={{ backgroundColor: "transparent", color: darkMode? "white" : "black" }} className="side-links">
             <a href="https://www.linkedin.com/in/ben-tucker-6a520911a/" target="_blank" rel='noreferrer'>

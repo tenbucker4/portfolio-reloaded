@@ -9,53 +9,57 @@ const Projects = ( { darkMode, projectRef }) => {
         <p className="bio-caption">Some of the projects I've built.</p>
         <div className="project-container">
           <div className="project-left">
-            <img src={require(`../files/youclone.jpeg`)}></img>
+            <img src={require(`../files/click.jpg`)} alt="click-app"></img>
+          </div>
+          <div className="project-right">
+            <h2>Click</h2>
+            <p className='tech-stack'>HTML / CSS / JavaScript / React / Firebase</p>
+            <p className='project-description'>Click is an instant messaging application where users can register and sign in, send text and images to other users, and customize their profile</p>
+            <div className="project-buttons">
+              <a href="https://tenbucker4.github.io/click/" target="_blank" rel="noreferrer"><button className="live-site">Live Site</button></a>
+              <a href="https://github.com/tenbucker4/click" target="_blank" rel="noreferrer"><button className="see-code">See Code</button></a>
+            </div>
+          </div>
+        </div>
+        <div className="project-container">
+          <div className="project-left">
+            <img src={require(`../files/youclone.jpeg`)} alt="youclone-app"></img>
           </div>
           <div className="project-right">
             <h2>YouClone</h2>
-            <p>YouClone is a fully functional replica of YouTube built with React and Material UI.</p>
+            <p className='tech-stack'>HTML / CSS / JavaScript / React / MaterialUI / RapidAPI</p>
+            <p className='project-description'>YouClone is a replica of YouTube. Users can browse their favourite videos and channels by category or manual search and watch their favourite content on any device.</p>
             <div className="project-buttons">
-              <a href="https://tenbucker4.github.io/youclone/" target="_blank"><button className="live-site">Live Site</button></a>
-              <a href="https://github.com/tenbucker4/youclone" target="_blank"><button className="see-code">See Code</button></a>
+              <a href="https://tenbucker4.github.io/youclone/" target="_blank" rel="noreferrer"><button className="live-site">Live Site</button></a>
+              <a href="https://github.com/tenbucker4/youclone" target="_blank" rel="noreferrer"><button className="see-code">See Code</button></a>
             </div>
           </div>
         </div>
         <div className="project-container">
           <div className="project-left">
-            <img src={require(`../files/the-range.jpg`)}></img>
+            <img src={require(`../files/the-range.jpg`)} alt="the-range-app"></img>
           </div>
           <div className="project-right">
             <h2>The Range</h2>
-            <p>The Range is a shopping cart application built in React.</p>
+            <p className='tech-stack'>HTML / CSS / JavaScript / React </p>
+            <p className='project-description'>The Range is a shopping cart application for golfing equipment. Users can browse a selection of products by category or manual search and add/view/edit items in their cart.</p>
             <div className="project-buttons">
-              <a href="https://tenbucker4.github.io/the-range/" target="_blank"><button className="live-site">Live Site</button></a>
-              <a href="https://github.com/tenbucker4/the-range" target="_blank"><button className="see-code">See Code</button></a>
+              <a href="https://tenbucker4.github.io/the-range/" target="_blank" rel="noreferrer"><button className="live-site">Live Site</button></a>
+              <a href="https://github.com/tenbucker4/the-range" target="_blank" rel="noreferrer"><button className="see-code">See Code</button></a>
             </div>
           </div>
         </div>
         <div className="project-container">
           <div className="project-left">
-            <img src={require(`../files/omicron.jpeg`)}></img>
+            <img src={require(`../files/omicron.jpeg`)} alt="omicron-app"></img>
           </div>
           <div className="project-right">
             <h2>Omicron</h2>
-            <p>Omicron is a replica of a homepage of a local business website built in React.</p>
+            <p className='tech-stack'>HTML / CSS / JavaScript / React </p>
+            <p className='project-description'>Omicron is a replica of a homepage of a local business website.</p>
             <div className="project-buttons">
-              <a href="https://tenbucker4.github.io/omicron/" target="_blank"><button className="live-site">Live Site</button></a>
-              <a href="https://github.com/tenbucker4/omicron" target="_blank"><button className="see-code">See Code</button></a>
-            </div>
-          </div>
-        </div>
-        <div className="project-container">
-          <div className="project-left">
-            <img src={require(`../files/employable.jpg`)}></img>
-          </div>
-          <div className="project-right">
-            <h2>Employable</h2>
-            <p>Employable is a custom resume builder built with React.</p>
-            <div className="project-buttons">
-              <a href="https://tenbucker4.github.io/employable/" target="_blank"><button className="live-site">Live Site</button></a>
-              <a href="https://github.com/tenbucker4/employable" target="_blank"><button className="see-code">See Code</button></a>
+              <a href="https://tenbucker4.github.io/omicron/" target="_blank" rel="noreferrer"><button className="live-site">Live Site</button></a>
+              <a href="https://github.com/tenbucker4/omicron" target="_blank" rel="noreferrer"><button className="see-code">See Code</button></a>
             </div>
           </div>
         </div>
