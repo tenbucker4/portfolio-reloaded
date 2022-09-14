@@ -46,6 +46,7 @@ const Projects = ( { darkMode, projectRef }) => {
             <img src={require(`../files/youclone.jpeg`)} alt="youclone-app"></img>
             <img src={require(`../files/youclone-1.jpg`)} alt="youclone-app"></img>
             <img src={require(`../files/youclone-2.jpg`)} alt="youclone-app"></img>
+            <img src={require(`../files/youclone-3.jpg`)} alt="youclone-app"></img>
             <div className='overlay'>
                 <Icon path={mdiChevronLeft}
                 color="white"
