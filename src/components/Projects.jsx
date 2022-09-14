@@ -1,4 +1,7 @@
 import React from 'react'
+import Icon from '@mdi/react'
+import { mdiChevronLeft } from '@mdi/js';
+import { mdiChevronRight } from '@mdi/js';
 import "../styles/Projects.css"
 
 const Projects = ( { darkMode, projectRef }) => {
@@ -14,6 +17,19 @@ const Projects = ( { darkMode, projectRef }) => {
             <img src={require(`../files/click-1.jpg`)} alt="click-app"></img>
             <img src={require(`../files/click-2.jpg`)} alt="click-app"></img>
             <img src={require(`../files/click-3.jpg`)} alt="click-app"></img>
+            <div className='overlay'>
+                <Icon path={mdiChevronLeft}
+                color="white"
+                className='bounce-left'
+                size={1}
+                />
+              <p>Scroll</p>
+              <Icon path={mdiChevronRight}
+                className='bounce-right'
+                color="white"
+                size={1}
+                />
+            </div>
           </div>
           <div className="project-right">
             <h2>Click</h2>
@@ -30,6 +46,19 @@ const Projects = ( { darkMode, projectRef }) => {
             <img src={require(`../files/youclone.jpeg`)} alt="youclone-app"></img>
             <img src={require(`../files/youclone-1.jpg`)} alt="youclone-app"></img>
             <img src={require(`../files/youclone-2.jpg`)} alt="youclone-app"></img>
+            <div className='overlay'>
+                <Icon path={mdiChevronLeft}
+                color="white"
+                className='bounce-left'
+                size={1}
+                />
+              <p>Scroll</p>
+              <Icon path={mdiChevronRight}
+                className='bounce-right'
+                color="white"
+                size={1}
+                />
+            </div>
           </div>
           <div className="project-right">
             <h2>YouClone</h2>
@@ -47,6 +76,19 @@ const Projects = ( { darkMode, projectRef }) => {
             <img src={require(`../files/the-range-1.jpg`)} alt="the-range-app"></img>
             <img src={require(`../files/the-range-2.jpg`)} alt="the-range-app"></img>
             <img src={require(`../files/the-range-3.jpg`)} alt="the-range-app"></img>
+            <div className='overlay'>
+                <Icon path={mdiChevronLeft}
+                color="white"
+                className='bounce-left'
+                size={1}
+                />
+              <p>Scroll</p>
+              <Icon path={mdiChevronRight}
+                className='bounce-right'
+                color="white"
+                size={1}
+                />
+            </div>
           </div>
           <div className="project-right">
             <h2>The Range</h2>
@@ -64,6 +106,19 @@ const Projects = ( { darkMode, projectRef }) => {
             <img src={require(`../files/omicron-1.jpg`)} alt="omicron-app"></img>
             <img src={require(`../files/omicron-2.jpg`)} alt="omicron-app"></img>
             <img src={require(`../files/omicron-3.jpg`)} alt="omicron-app"></img>
+            <div className='overlay'>
+                <Icon path={mdiChevronLeft}
+                color="white"
+                className='bounce-left'
+                size={1}
+                />
+              <p>Scroll</p>
+              <Icon path={mdiChevronRight}
+                className='bounce-right'
+                color="white"
+                size={1}
+                />
+            </div>
           </div>
           <div className="project-right">
             <h2>Omicron</h2>
