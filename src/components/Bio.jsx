@@ -29,10 +29,10 @@ const Bio = ({ darkMode, bioRef }) => {
                     <div className="skill-entry">CSS</div>
                     <div className="skill-entry">JavaScript</div>
                     <div className="skill-entry">React</div>
-                    <div className="skill-entry">Material UI</div>
+                    <div className="skill-entry">Firebase</div>
+                    <div className="skill-entry">VSCode</div>
                     <div className="skill-entry">Git</div>
                     <div className="skill-entry">GitHub</div>
-                    <div className="skill-entry">Firebase</div>
                     <div className="skill-entry">Responsive Design</div>
                 </div>
             </div>

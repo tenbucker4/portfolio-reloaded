@@ -3,10 +3,15 @@ import "../styles/Title.css"
 import Icon from '@mdi/react'
 import { mdiLinkedin } from '@mdi/js';
 import { mdiGithub } from '@mdi/js';
+import { mdiChevronDown } from '@mdi/js';
 
-const Title = ({ darkMode, projectRef, titleRef }) => {
+const Title = ({ darkMode, projectRef, titleRef, bioRef }) => {
     const scroll = () => {
         projectRef.current?.scrollIntoView();
+    }
+
+    const scrollToBio = () => {
+        bioRef.current?.scrollIntoView();
     }
 
 
@@ -31,6 +36,13 @@ const Title = ({ darkMode, projectRef, titleRef }) => {
                 />
             </a>
         </aside>
+        <div className='scroll-icon' onClick={scrollToBio}>
+            <Icon path={mdiChevronDown}
+            size={1.5}
+            className="scroll-down"
+            color={darkMode ? ("white") : ("black")}
+            />
+        </div>
     </section>
   )
 }

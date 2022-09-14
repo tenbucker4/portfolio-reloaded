@@ -29,6 +29,7 @@ const App = () => {
                 titleRef={titleRef}
                 projectRef={projectRef}
                 darkMode={darkMode}
+                bioRef={bioRef}
             />
             <Bio bioRef={bioRef} darkMode={darkMode} />
             <Projects darkMode={darkMode} projectRef={projectRef} />

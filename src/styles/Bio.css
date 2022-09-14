@@ -24,6 +24,7 @@
 
 .bio-caption {
     padding: 1rem 0;
+    text-align: center;
 }
 
 .skill-icon {
@@ -69,6 +70,6 @@
     }
 
     .about-me {
-        padding: 6rem 2rem 4rem 2rem;
+        padding: 6rem 1rem 4rem 1rem;
     }
 }

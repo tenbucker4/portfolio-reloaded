@@ -34,7 +34,7 @@ const Projects = ( { darkMode, projectRef }) => {
           <div className="project-right">
             <h2>Click</h2>
             <p className='tech-stack'>HTML / CSS / JavaScript / React / Firebase</p>
-            <p className='project-description'>Click is an instant messaging application where users can register and sign in, send text and images to other users, and customize their profile</p>
+            <p className='project-description'>Click is an instant messaging application where users can register and sign in, send text and images to other users, and customize their profile.</p>
             <div className="project-buttons">
               <a href="https://tenbucker4.github.io/click/" target="_blank" rel="noreferrer"><button className="live-site">Live Site</button></a>
               <a href="https://github.com/tenbucker4/click" target="_blank" rel="noreferrer"><button className="see-code">See Code</button></a>
