@@ -30,9 +30,15 @@
     gap: 4rem;
 }
 
-.tech-stack,
 .project-description {
     font-size: 16px;
+}
+
+.tech-stack {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.25rem;
 }
 
 .project-left {
@@ -42,7 +48,6 @@
     align-items: center;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
-    transition: transform 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33);
 }
 
 .overlay {
@@ -103,10 +108,6 @@
 .project-left:hover .overlay {
     bottom: 0;
     opacity: 1;
-}
-
-.project-left:hover {
-    transform: scale(1.05);
 }
 
 .project-left img {

@@ -2,6 +2,13 @@ import React from 'react'
 import Icon from '@mdi/react'
 import { mdiChevronLeft } from '@mdi/js';
 import { mdiChevronRight } from '@mdi/js';
+import { mdiLanguageHtml5 } from '@mdi/js';
+import { mdiLanguageCss3 } from '@mdi/js';
+import { mdiLanguageJavascript } from '@mdi/js';
+import { mdiReact } from '@mdi/js';
+import { mdiFirebase } from '@mdi/js';
+import { mdiSass } from '@mdi/js';
+import { mdiMaterialUi } from '@mdi/js';
 import "../styles/Projects.css"
 
 const Projects = ( { darkMode, projectRef }) => {
@@ -33,7 +40,28 @@ const Projects = ( { darkMode, projectRef }) => {
           </div>
           <div className="project-right">
             <h2>Click</h2>
-            <p className='tech-stack'>HTML / CSS / JavaScript / React / Firebase</p>
+            <div className='tech-stack'>
+              <Icon path={mdiLanguageHtml5}
+                color="rgb(255, 68, 0)"
+                size={1.75}
+                />
+                <Icon path={mdiLanguageCss3}
+                color="rgb(28, 136, 237)"
+                size={1.75}
+                />
+                <Icon path={mdiLanguageJavascript}
+                color="yellow"
+                size={1.75}
+                />
+                <Icon path={mdiReact}
+                color="rgb(28, 136, 237)"
+                size={1.75}
+                />
+                <Icon path={mdiFirebase}
+                color="orange"
+                size={1.75}
+                />
+            </div>
             <p className='project-description'>Click is an instant messaging application where users can register and sign in, send text and images to other users, and customize their profile.</p>
             <div className="project-buttons">
               <a href="https://tenbucker4.github.io/click/" target="_blank" rel="noreferrer"><button className="live-site">Live Site</button></a>
@@ -63,7 +91,28 @@ const Projects = ( { darkMode, projectRef }) => {
           </div>
           <div className="project-right">
             <h2>YouClone</h2>
-            <p className='tech-stack'>HTML / CSS / JavaScript / React / MaterialUI / RapidAPI</p>
+            <div className='tech-stack'>
+              <Icon path={mdiLanguageHtml5}
+                color="rgb(255, 68, 0)"
+                size={1.75}
+                />
+                <Icon path={mdiLanguageCss3}
+                color="rgb(28, 136, 237)"
+                size={1.75}
+                />
+                <Icon path={mdiLanguageJavascript}
+                color="yellow"
+                size={1.75}
+                />
+                <Icon path={mdiReact}
+                color="rgb(28, 136, 237)"
+                size={1.75}
+                />
+                <Icon path={mdiMaterialUi}
+                color="rgb(28, 136, 237)"
+                size={1.75}
+                />
+            </div>
             <p className='project-description'>YouClone is a replica of YouTube. Users can browse their favourite videos and channels by category or manual search and watch their favourite content on any device.</p>
             <div className="project-buttons">
               <a href="https://tenbucker4.github.io/youclone/" target="_blank" rel="noreferrer"><button className="live-site">Live Site</button></a>
@@ -93,7 +142,24 @@ const Projects = ( { darkMode, projectRef }) => {
           </div>
           <div className="project-right">
             <h2>The Range</h2>
-            <p className='tech-stack'>HTML / CSS / JavaScript / React </p>
+            <div className='tech-stack'>
+              <Icon path={mdiLanguageHtml5}
+                color="rgb(255, 68, 0)"
+                size={1.75}
+                />
+                <Icon path={mdiLanguageCss3}
+                color="rgb(28, 136, 237)"
+                size={1.75}
+                />
+                <Icon path={mdiLanguageJavascript}
+                color="yellow"
+                size={1.75}
+                />
+                <Icon path={mdiReact}
+                color="rgb(28, 136, 237)"
+                size={1.75}
+                />
+            </div>
             <p className='project-description'>The Range is a shopping cart application for golfing equipment. Users can browse a selection of products by category or manual search and add/view/edit items in their cart.</p>
             <div className="project-buttons">
               <a href="https://tenbucker4.github.io/the-range/" target="_blank" rel="noreferrer"><button className="live-site">Live Site</button></a>
@@ -103,10 +169,9 @@ const Projects = ( { darkMode, projectRef }) => {
         </div>
         <div className="project-container">
           <div className="project-left">
-            <img src={require(`../files/omicron.jpeg`)} alt="omicron-app"></img>
-            <img src={require(`../files/omicron-1.jpg`)} alt="omicron-app"></img>
-            <img src={require(`../files/omicron-2.jpg`)} alt="omicron-app"></img>
-            <img src={require(`../files/omicron-3.jpg`)} alt="omicron-app"></img>
+            <img src={require(`../files/ether-1.png`)} alt="omicron-app"></img>
+            <img src={require(`../files/ether-2.png`)} alt="omicron-app"></img>
+            <img src={require(`../files/ether-3.png`)} alt="omicron-app"></img>
             <div className='overlay'>
                 <Icon path={mdiChevronLeft}
                 color="white"
@@ -122,12 +187,33 @@ const Projects = ( { darkMode, projectRef }) => {
             </div>
           </div>
           <div className="project-right">
-            <h2>Omicron</h2>
-            <p className='tech-stack'>HTML / CSS / JavaScript / React </p>
-            <p className='project-description'>Omicron is a replica of a homepage of a local business website.</p>
+            <h2>Ether</h2>
+            <div className='tech-stack'>
+                <Icon path={mdiLanguageHtml5}
+                color="rgb(255, 68, 0)"
+                size={1.75}
+                />
+                <Icon path={mdiLanguageCss3}
+                color="rgb(28, 136, 237)"
+                size={1.75}
+                />
+                <Icon path={mdiLanguageJavascript}
+                color="yellow"
+                size={1.75}
+                />
+                <Icon path={mdiReact}
+                color="rgb(28, 136, 237)"
+                size={1.75}
+                />
+                <Icon path={mdiSass}
+                color="rgb(244, 118, 185)"
+                size={1.75}
+                />
+            </div>
+            <p className='project-description'>Ether is an informative space app where users can learn more about the planets in our solar system.</p>
             <div className="project-buttons">
-              <a href="https://tenbucker4.github.io/omicron/" target="_blank" rel="noreferrer"><button className="live-site">Live Site</button></a>
-              <a href="https://github.com/tenbucker4/omicron" target="_blank" rel="noreferrer"><button className="see-code">See Code</button></a>
+              <a href="https://tenbucker4.github.io/ether/" target="_blank" rel="noreferrer"><button className="live-site">Live Site</button></a>
+              <a href="https://github.com/tenbucker4/ether" target="_blank" rel="noreferrer"><button className="see-code">See Code</button></a>
             </div>
           </div>
         </div>
