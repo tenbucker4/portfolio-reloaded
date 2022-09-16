@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Icon from '@mdi/react'
 import { mdiChevronLeft } from '@mdi/js';
 import { mdiChevronRight } from '@mdi/js';
@@ -12,6 +12,16 @@ import { mdiMaterialUi } from '@mdi/js';
 import "../styles/Projects.css"
 
 const Projects = ( { darkMode, projectRef }) => {
+    const [firstProjectIndex, setFirstProjectIndex] = useState(0);
+
+    const translateRight = (subject) => {
+        console.log(subject)
+        setFirstProjectIndex(prev => prev + 1)
+    }
+
+    const translateLeft = () => {
+        setFirstProjectIndex(prev => prev - 1)
+    }
 
   return (
     <section style={{ backgroundColor: darkMode? "#1b1b1b" : "rgb(233, 233, 233)", color: darkMode? "white" : "black" }} ref={projectRef} className="projects">
@@ -19,24 +29,43 @@ const Projects = ( { darkMode, projectRef }) => {
         <span></span>
         <p className="bio-caption">Some of the projects I've built. Scroll each image to see more.</p>
         <div className="project-container">
-          <div className="project-left">
-            <img src={require(`../files/click.jpg`)} alt="click-app"></img>
-            <img src={require(`../files/click-1.jpg`)} alt="click-app"></img>
-            <img src={require(`../files/click-2.jpg`)} alt="click-app"></img>
-            <img src={require(`../files/click-3.jpg`)} alt="click-app"></img>
-            <div className='overlay'>
-                <Icon path={mdiChevronLeft}
-                color="white"
-                className='bounce-left'
-                size={1}
-                />
-              <p>Scroll</p>
-              <Icon path={mdiChevronRight}
-                className='bounce-right'
-                color="white"
-                size={1}
-                />
-            </div>
+            <div className="project-left">
+              <div className='slider' style={{
+                    transform: `translateX(calc(${firstProjectIndex} * -100%))`,
+                }}>
+                <img src={require(`../files/click.jpg`)} alt="click-app"></img>
+                <img src={require(`../files/click-1.jpg`)} alt="click-app"></img>
+                <img src={require(`../files/click-2.jpg`)} alt="click-app"></img>
+                <img src={require(`../files/click-3.jpg`)} alt="click-app"></img>
+                {/* <div className='overlay'>
+                  <Icon path={mdiChevronLeft}
+                  color="white"
+                  className='bounce-left'
+                  size={1}
+                  />
+                <p>Scroll</p>
+                <Icon path={mdiChevronRight}
+                  className='bounce-right'
+                  color="white"
+                  size={1}
+                  />
+                </div> */}
+              </div>
+              <div className='slider-arrows'>
+                <div className='handle-left'><Icon path={mdiChevronLeft}
+                  color="black"
+                  onClick={translateLeft}
+                  size={2}
+                  />
+                </div>
+                <div className='handle-right'>
+                <Icon path={mdiChevronRight}
+                  color="black"
+                  onClick={translateRight}
+                  size={2}
+                  />
+                </div>
+              </div>
           </div>
           <div className="project-right">
             <h2>Click</h2>
