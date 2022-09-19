@@ -1,5 +1,6 @@
 import React from 'react'
 import "../styles/Bio.css"
+import resume from "../files/Ben-Tucker-Resume.pdf";
 
 
 const Bio = ({ darkMode, bioRef }) => {
@@ -18,7 +19,7 @@ const Bio = ({ darkMode, bioRef }) => {
                        When I'm away from my computer, I love playing basketball, golf, video games, and spending time with family and friends.</p>
                 <br></br>
                 <p style={{ color: darkMode? "white" : "#555555" }}>I'm open to <b>job oppportunities</b> where I can contribute to big ambitious projects and grow as a developer. If you have an opportunity 
-                    that matches my skillset, please don't hesitate to <b>contact me</b>.
+                    that matches my skillset, please don't hesitate to <b className='bio-tag'>contact me</b>. If you'd like to learn some more about my professional experience, you can download my resume <a href={resume} download><b className='bio-tag'>here</b></a>.
                 </p>
             </div>
             <div className="skills-content">

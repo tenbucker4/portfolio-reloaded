@@ -4,6 +4,8 @@ import Icon from '@mdi/react'
 import { mdiLinkedin } from '@mdi/js';
 import { mdiGithub } from '@mdi/js';
 import { mdiChevronDown } from '@mdi/js';
+import { mdiFileAccount } from '@mdi/js';
+import resume from "../files/Ben-Tucker-Resume.pdf";
 
 const Title = ({ darkMode, projectRef, titleRef, bioRef }) => {
     const scroll = () => {
@@ -18,13 +20,20 @@ const Title = ({ darkMode, projectRef, titleRef, bioRef }) => {
   return (
     <section ref={titleRef} style={{ backgroundColor: darkMode? "rgb(27, 27, 27)" : "rgb(233, 233, 233)", color: darkMode? "white" : "black" }} className="title-page">
         <h1>Hi, I'm <span>Ben.</span></h1>
-        <div>I'm a frontend developer.</div>
+        <div style={{ fontSize: "18px" }}>I'm a frontend developer.</div>
         <button onClick={scroll} className="see-projects">Projects</button>
         <aside style={{ backgroundColor: "transparent", color: darkMode? "white" : "black" }} className="side-links">
             <a href="https://www.linkedin.com/in/ben-tucker-6a520911a/" target="_blank" rel='noreferrer'>
                 <Icon path={mdiLinkedin}
                 className="link-icon"
                 title="LinkedIn Profile"
+                color={darkMode ? ("white") : ("black")}
+                />
+            </a>
+            <a href={resume} download>
+                <Icon path={mdiFileAccount}
+                className="link-icon"
+                title="Resume"
                 color={darkMode ? ("white") : ("black")}
                 />
             </a>

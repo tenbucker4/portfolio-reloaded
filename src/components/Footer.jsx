@@ -3,6 +3,8 @@ import "../styles/Footer.css"
 import Icon from '@mdi/react'
 import { mdiLinkedin } from '@mdi/js';
 import { mdiGithub } from '@mdi/js';
+import { mdiFileAccount } from '@mdi/js';
+import resume from "../files/Ben-Tucker-Resume.pdf";
 
 const Footer = ( { darkMode }) => {
   return (
@@ -13,6 +15,13 @@ const Footer = ( { darkMode }) => {
                 <Icon path={mdiLinkedin}
                 className="footer-icon"
                 title="LinkedIn Profile"
+                color={darkMode ? ("white") : ("black")}
+                />
+            </a>
+            <a href={resume} download>
+                <Icon path={mdiFileAccount}
+                className="footer-icon"
+                title="Resume"
                 color={darkMode ? ("white") : ("black")}
                 />
             </a>
