@@ -10,7 +10,6 @@ import { mdiMaterialUi } from '@mdi/js';
 import "../styles/Projects.css"
 
 const Projects = ( { darkMode, projectRef }) => {
-    // const [projectIndex, setProjectIndex] = useState(0);
 
   return (
     <section style={{ backgroundColor: darkMode? "#1b1b1b" : "rgb(233, 233, 233)", color: darkMode? "white" : "black" }} ref={projectRef} className="projects">
