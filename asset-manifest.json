@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-reloaded/static/css/main.da748c43.css",
-    "main.js": "/portfolio-reloaded/static/js/main.2c4fe7dc.js",
+    "main.css": "/portfolio-reloaded/static/css/main.e3ff2dc0.css",
+    "main.js": "/portfolio-reloaded/static/js/main.1be0ee27.js",
     "static/media/ether-4.png": "/portfolio-reloaded/static/media/ether-4.1e358c2f4fc188e7ecfd.png",
     "static/media/youclone-1.jpg": "/portfolio-reloaded/static/media/youclone-1.090d9dc92fc38f73f990.jpg",
     "static/media/ether-3.png": "/portfolio-reloaded/static/media/ether-3.72b37439c0c417fc1e41.png",
@@ -18,12 +18,13 @@
     "static/media/click-1.jpg": "/portfolio-reloaded/static/media/click-1.b3e79ed10ac9f64130c2.jpg",
     "static/media/click-2.jpg": "/portfolio-reloaded/static/media/click-2.7ba8eee122314dddc7a1.jpg",
     "static/media/click-3.jpg": "/portfolio-reloaded/static/media/click-3.505b1d75853acb306745.jpg",
+    "static/media/Ben-Tucker-Resume.pdf": "/portfolio-reloaded/static/media/Ben-Tucker-Resume.2c9261c42982922b17d6.pdf",
     "index.html": "/portfolio-reloaded/index.html",
-    "main.da748c43.css.map": "/portfolio-reloaded/static/css/main.da748c43.css.map",
-    "main.2c4fe7dc.js.map": "/portfolio-reloaded/static/js/main.2c4fe7dc.js.map"
+    "main.e3ff2dc0.css.map": "/portfolio-reloaded/static/css/main.e3ff2dc0.css.map",
+    "main.1be0ee27.js.map": "/portfolio-reloaded/static/js/main.1be0ee27.js.map"
   },
   "entrypoints": [
-    "static/css/main.da748c43.css",
-    "static/js/main.2c4fe7dc.js"
+    "static/css/main.e3ff2dc0.css",
+    "static/js/main.1be0ee27.js"
   ]
 }
