@@ -60,7 +60,7 @@
 .scroll-icon {
     cursor: pointer;
     position: absolute;
-    bottom: 1.5rem;
+    bottom: 2rem;
     transform: translateX(-50%);
     animation: bounce 2s infinite;
 }
